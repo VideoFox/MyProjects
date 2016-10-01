@@ -1,1 +1,9 @@
 C:\GitHub\Kubiki\Kubiki\bin\Debug\Kubiki.exe.config
+C:\GitHub\Kubiki\Kubiki\bin\Debug\Kubiki.exe
+C:\GitHub\Kubiki\Kubiki\bin\Debug\Kubiki.pdb
+C:\GitHub\Kubiki\Kubiki\obj\Debug\Kubiki.csprojResolveAssemblyReference.cache
+C:\GitHub\Kubiki\Kubiki\obj\Debug\Kubiki.Form1.resources
+C:\GitHub\Kubiki\Kubiki\obj\Debug\Kubiki.Properties.Resources.resources
+C:\GitHub\Kubiki\Kubiki\obj\Debug\Kubiki.csproj.GenerateResource.Cache
+C:\GitHub\Kubiki\Kubiki\obj\Debug\Kubiki.exe
+C:\GitHub\Kubiki\Kubiki\obj\Debug\Kubiki.pdb

@@ -28,63 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.textDices = new System.Windows.Forms.TextBox();
+            this.labelSum = new System.Windows.Forms.Label();
+            this.box1 = new System.Windows.Forms.PictureBox();
+            this.box2 = new System.Windows.Forms.PictureBox();
+            this.buttonGo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.box1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box2)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textDices
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 0;
+            this.textDices.Location = new System.Drawing.Point(12, 12);
+            this.textDices.Name = "textDices";
+            this.textDices.ReadOnly = true;
+            this.textDices.Size = new System.Drawing.Size(116, 20);
+            this.textDices.TabIndex = 0;
             // 
-            // label1
+            // labelSum
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.labelSum.AutoSize = true;
+            this.labelSum.Location = new System.Drawing.Point(12, 45);
+            this.labelSum.Name = "labelSum";
+            this.labelSum.Size = new System.Drawing.Size(35, 13);
+            this.labelSum.TabIndex = 1;
+            this.labelSum.Text = "label1";
             // 
-            // pictureBox1
+            // box1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.box1.Location = new System.Drawing.Point(12, 71);
+            this.box1.Name = "box1";
+            this.box1.Size = new System.Drawing.Size(50, 49);
+            this.box1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.box1.TabIndex = 2;
+            this.box1.TabStop = false;
             // 
-            // pictureBox2
+            // box2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(78, 71);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.box2.Location = new System.Drawing.Point(78, 71);
+            this.box2.Name = "box2";
+            this.box2.Size = new System.Drawing.Size(50, 49);
+            this.box2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.box2.TabIndex = 3;
+            this.box2.TabStop = false;
+            // 
+            // buttonGo
+            // 
+            this.buttonGo.Location = new System.Drawing.Point(29, 155);
+            this.buttonGo.Name = "buttonGo";
+            this.buttonGo.Size = new System.Drawing.Size(75, 23);
+            this.buttonGo.TabIndex = 4;
+            this.buttonGo.Text = "Бросок";
+            this.buttonGo.UseVisualStyleBackColor = true;
+            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(143, 232);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(143, 211);
+            this.Controls.Add(this.buttonGo);
+            this.Controls.Add(this.box2);
+            this.Controls.Add(this.box1);
+            this.Controls.Add(this.labelSum);
+            this.Controls.Add(this.textDices);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Text = "Кубики";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.box1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,10 +108,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textDices;
+        private System.Windows.Forms.Label labelSum;
+        private System.Windows.Forms.PictureBox box1;
+        private System.Windows.Forms.PictureBox box2;
+        private System.Windows.Forms.Button buttonGo;
     }
 }
 
